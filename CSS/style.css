@@ -17,7 +17,7 @@ body {
     font-weight: 300;
 }
 
-body, input {
+body, input, select {
     font-family: 'Teko', sans-serif;
 }
 
@@ -28,6 +28,7 @@ main {
     display: flex;
     gap: 1vw;
 }
+
 
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
@@ -132,11 +133,12 @@ main {
 }
 
 .producao {
-    margin-top: 1em;
+    float: right;
+    position: relative;
+    margin-top: 0.5em;
     font-size: 2em;
     text-transform: uppercase;
     padding: 0.2em 1em;
-    float: right;
     border: 3px solid var(--main-branco);
     background: var(--main-branco);
     clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
@@ -147,8 +149,6 @@ main {
     background: var(--main-preto);
     color: var(--main-branco)
 }
-
-
 
 /****************************** Estatísticas *****/
 .estatisticas {
@@ -207,6 +207,31 @@ main {
     order: 1;
     flex-basis: 35%;
     margin: 10px 0 0;
+}
+
+
+/**************************** Menu Select Alterar Cor do Robo **************/
+
+label[for=cores]{
+    margin-top: 0.5em;
+    display: inline-block;
+    font-size: 2em;
+    padding: 0.1em;
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    text-transform: uppercase;
+    margin-left: 0.5em;
+}
+
+/* Menu Select */
+select {   
+    position: relative;
+    margin-top: 0.5em;
+    float: right;
+    font-size: 2em;
+    text-transform: uppercase;
+    background: var(--main-branco); 
 }
 
 @media screen and (max-width: 1600px) {

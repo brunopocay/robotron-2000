@@ -59,3 +59,39 @@ function atualizaEstatisticas(peca){
     })
 }
 
+let cores = [
+    {color:"img/amarelo/robotron.png"},
+    {color:"img/azul/robotron.png"},
+    {color:"img/branco/robotron.png"},
+    {color:"img/preto/robotron.png"},
+    {color:"img/rosa/robotron.png"},
+    {color:"img/vermelho/robotron.png"},       
+]
+
+cores.forEach( (elemento) =>{
+    
+})
+
+
+const escolhacor = document.querySelectorAll(".colors");
+const imagem = document.querySelector("#robotron");
+
+escolhacor.forEach( (elemento) => {
+    elemento.addEventListener("click", (evento) => {
+        escolhendoCor(evento.target.value, imagem.getAttribute("src"));
+    })
+})
+
+function escolhendoCor(choices, chosen){
+
+    if (choices === "opcao"){
+        return 0;
+    }
+    else{
+        chosen = imagem.setAttribute("src", "img/"+choices+"/robotron.png") 
+    }
+}
+
+
+
+
