@@ -59,20 +59,6 @@ function atualizaEstatisticas(peca){
     })
 }
 
-let cores = [
-    {color:"img/amarelo/robotron.png"},
-    {color:"img/azul/robotron.png"},
-    {color:"img/branco/robotron.png"},
-    {color:"img/preto/robotron.png"},
-    {color:"img/rosa/robotron.png"},
-    {color:"img/vermelho/robotron.png"},       
-]
-
-cores.forEach( (elemento) =>{
-    
-})
-
-
 const escolhacor = document.querySelectorAll(".colors");
 const imagem = document.querySelector("#robotron");
 
