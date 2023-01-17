@@ -68,13 +68,13 @@ escolhacor.forEach( (elemento) => {
     })
 })
 
-function escolhendoCor(choices, chosen){
+function escolhendoCor(escolha, escolhido){
 
-    if (choices === "opcao"){
+    if (escolha === "opcao"){
         return 0;
     }
     else{
-        chosen = imagem.setAttribute("src", "img/"+choices+"/robotron.png") 
+        escolhido = imagem.setAttribute("src", "img/"+escolha+"/robotron.png") 
     }
 }
 
